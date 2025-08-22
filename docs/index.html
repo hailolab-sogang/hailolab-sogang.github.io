@@ -97,6 +97,22 @@
                 
                 <div class="research-item row-item">
                     <div class="title-row">
+                        <h4 class="title">Drift: Decoding-time Personalized Alignments with Implicit User Preferences</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Minbeom Kim, Kang-il Lee, Seongho Joo, Hwaran Lee,  Thibaut Thonet, Kyomin Jung</div>
+                    <div class="booktitle">EMNLP Findings, 2025</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://arxiv.org/abs/2502.14289">Preprint</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
                         <h4 class="title">Code-Switching Curriculum Learning for Multilingual Transfer in LLMs</h4>
                         <template v-for="tagId in item.tags">
                             <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
@@ -172,22 +188,6 @@
                     <div class="booktitle">ICLR, 2025</div>
                     <div class="link-buttons link-buttons-small">
                         <p><a href="https://openreview.net/pdf?id=8roRgrjbjv">PDF</a></p>
-                    </div>
-                </div>
-                
-                <div class="research-item row-item">
-                    <div class="title-row">
-                        <h4 class="title">Drift: Decoding-time Personalized Alignments with Implicit User Preferences</h4>
-                        <template v-for="tagId in item.tags">
-                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
-                                [[ tags[tagId].tag ]]
-                            </div>
-                        </template>                    
-                    </div>
-                    <div class="authors">Minbeom Kim, Kang-il Lee, Seongho Joo, Hwaran Lee, Kyomin Jung</div>
-                    <div class="booktitle">EMNLP Findings, 2025</div>
-                    <div class="link-buttons link-buttons-small">
-                        <p><a href="https://arxiv.org/abs/2502.14289">Preprint</a></p>
                     </div>
                 </div>
                 

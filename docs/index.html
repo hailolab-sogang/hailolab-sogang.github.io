@@ -69,31 +69,27 @@
         </div>
     </section>
     
-    <div class="row">
-        <div class="container">
-            <div class="announcements v-padded">
-                <h3 class="row-title">Announcements</h3>
-                
-                <div class="announcement row-item">
-                    
-                    <h4 class="announcement-title">
-                        News
-                    </h4>
-                    
-                    <div class="announcement-content">
-                        <p>🔸 <strong>[2025-08]</strong> Our lab has been awarded two projects funded by the Ministry of Science and ICT: the <strong>Generative AI Leading Talent Cultivation Project</strong> (led by <a href="https://nc-ai.com">NC AI</a>) and the <strong>Proprietary AI Foundation Model Development Project</strong> (led by <a href="https://www.upstage.ai">Upstage</a>). 🎉</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    
     
     <div class="row">
         <div class="container">
             <div class="latest v-padded">
                 <h3 class="row-title">Latest Publications</h3>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
+                        <h4 class="title">BLEnD-Vis: Benchmarking Multimodal Cultural Understanding in Vision Language Models</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Bryan Chen Zhengyu Tan, Zheng Weihua, Zhengyuan Liu, Nancy F. Chen, Hwaran Lee, Kenny Tsu Wei Choo, Roy Ka-Wei Lee</div>
+                    <div class="booktitle">EACL, 2026</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://arxiv.org/abs/2510.11178">Preprint</a></p>
+                    </div>
+                </div>
                 
                 <div class="research-item row-item">
                     <div class="title-row">

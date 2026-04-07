@@ -77,6 +77,23 @@
                 
                 <div class="research-item row-item">
                     <div class="title-row">
+                        <h4 class="title">Alignment Data Map for Efficient Preference Data Selection and Diagnosis
+</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Seohyeong Lee, Eunwon Kim, Hwaran Lee, Buru Chang</div>
+                    <div class="booktitle">ACL Findings, 2026</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://arxiv.org/abs/2505.23114">Preprint</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
                         <h4 class="title">BLEnD-Vis: Benchmarking Multimodal Cultural Understanding in Vision Language Models</h4>
                         <template v-for="tagId in item.tags">
                             <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
@@ -87,7 +104,7 @@
                     <div class="authors">Bryan Chen Zhengyu Tan, Zheng Weihua, Zhengyuan Liu, Nancy F. Chen, Hwaran Lee, Kenny Tsu Wei Choo, Roy Ka-Wei Lee</div>
                     <div class="booktitle">EACL, 2026</div>
                     <div class="link-buttons link-buttons-small">
-                        <p><a href="https://arxiv.org/abs/2510.11178">Preprint</a></p>
+                        <p><a href="https://aclanthology.org/2026.eacl-long.215/">PDF</a></p>
                     </div>
                 </div>
                 
@@ -103,7 +120,7 @@
                     <div class="authors">Minbeom Kim, Kang-il Lee, Seongho Joo, Hwaran Lee,  Thibaut Thonet, Kyomin Jung</div>
                     <div class="booktitle">EMNLP Findings, 2025</div>
                     <div class="link-buttons link-buttons-small">
-                        <p><a href="https://arxiv.org/abs/2502.14289">Preprint</a></p>
+                        <p><a href="https://aclanthology.org/2025.findings-emnlp.324/">PDF</a></p>
                     </div>
                 </div>
                 
@@ -119,7 +136,7 @@
                     <div class="authors">Haneul Yoo, Cheonbok Park, Sangdoo Yun, Alice Oh, Hwaran Lee</div>
                     <div class="booktitle">ACL Findings, 2025</div>
                     <div class="link-buttons link-buttons-small">
-                        <p><a href="https://arxiv.org/abs/2411.02460">Preprint</a></p>
+                        <p><a href="https://aclanthology.org/2025.findings-acl.407/">PDF</a></p>
                     </div>
                 </div>
                 
@@ -135,7 +152,7 @@
                     <div class="authors">Haneul Yoo, Yongjin Yang, Hwaran Lee</div>
                     <div class="booktitle">ACL, 2025</div>
                     <div class="link-buttons link-buttons-small">
-                        <p><a href="https://arxiv.org/abs/2406.15481">Preprint</a></p>
+                        <p><a href="https://aclanthology.org/2025.acl-long.657">PDF</a></p>
                     </div>
                 </div>
                 
@@ -168,22 +185,6 @@
                     <div class="booktitle">NAACL Findings, 2025</div>
                     <div class="link-buttons link-buttons-small">
                         <p><a href="https://aclanthology.org/2025.findings-naacl.325/">PDF</a></p>
-                    </div>
-                </div>
-                
-                <div class="research-item row-item">
-                    <div class="title-row">
-                        <h4 class="title">Guaranteed Generation from Large Language Models</h4>
-                        <template v-for="tagId in item.tags">
-                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
-                                [[ tags[tagId].tag ]]
-                            </div>
-                        </template>                    
-                    </div>
-                    <div class="authors">Minbeom Kim, Thibaut Thonet, Jos Rozen, Hwaran Lee, Kyomin Jung, Marc Dymetman</div>
-                    <div class="booktitle">ICLR, 2025</div>
-                    <div class="link-buttons link-buttons-small">
-                        <p><a href="https://openreview.net/pdf?id=8roRgrjbjv">PDF</a></p>
                     </div>
                 </div>
                 

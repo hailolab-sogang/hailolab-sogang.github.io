@@ -77,6 +77,22 @@
                 
                 <div class="research-item row-item">
                     <div class="title-row">
+                        <h4 class="title">Instruction Quality Matters: Refining Instructions for Effective Preference Learning</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Seohyeong Lee, Hwaran Lee*, Buru Chang*</div>
+                    <div class="booktitle">Arxiv</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://arxiv.org/abs/2608.26779">Preprint</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
                         <h4 class="title">Alignment Data Map for Efficient Preference Data Selection and Diagnosis
 </h4>
                         <template v-for="tagId in item.tags">
@@ -85,10 +101,10 @@
                             </div>
                         </template>                    
                     </div>
-                    <div class="authors">Seohyeong Lee, Eunwon Kim, Hwaran Lee, Buru Chang</div>
+                    <div class="authors">Seohyeong Lee, Eunwon Kim, Hwaran Lee*, Buru Chang*</div>
                     <div class="booktitle">ACL Findings, 2026</div>
                     <div class="link-buttons link-buttons-small">
-                        <p><a href="https://arxiv.org/abs/2505.23114">Preprint</a></p>
+                        <p><a href="https://aclanthology.org/2026.findings-acl.1906/">PDF</a></p>
                     </div>
                 </div>
                 
@@ -165,26 +181,10 @@
                             </div>
                         </template>                    
                     </div>
-                    <div class="authors">Minbeom Kim, Hwanhee Lee, Joonsuk Park, Hwaran Lee, Kyomin Jung</div>
+                    <div class="authors">Minbeom Kim, Hwanhee Lee, Joonsuk Park, Hwaran Lee*, Kyomin Jung*</div>
                     <div class="booktitle">NAACL, 2025</div>
                     <div class="link-buttons link-buttons-small">
                         <p><a href="https://aclanthology.org/2025.naacl-long.333/">PDF</a></p>
-                    </div>
-                </div>
-                
-                <div class="research-item row-item">
-                    <div class="title-row">
-                        <h4 class="title">MAQA: Evaluating Uncertainty Quantification in LLMs Regarding Data Uncertainty</h4>
-                        <template v-for="tagId in item.tags">
-                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
-                                [[ tags[tagId].tag ]]
-                            </div>
-                        </template>                    
-                    </div>
-                    <div class="authors">Yongjin Yang, Haneul Yoo, Hwaran Lee</div>
-                    <div class="booktitle">NAACL Findings, 2025</div>
-                    <div class="link-buttons link-buttons-small">
-                        <p><a href="https://aclanthology.org/2025.findings-naacl.325/">PDF</a></p>
                     </div>
                 </div>
                 
